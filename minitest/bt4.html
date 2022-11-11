@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 4</title>
+</head>
+<body>
+<p>Nhập:</p>
+<input id="number">
+<button onclick="ketqua()">Xác Nhận:</button>
+<p id ='tinhtoan'></p>
+<p>Nhập:</p>
+<input id="number2">
+<input id="number3">
+<button onclick="ketqua2()">Xác Nhận:</button>
+<p id="pheptinh"></p>
+<p>Nhập:</p>
+<input id="number4">
+<input id="number5">
+<button onclick="ketqua3()">Xác Nhận:</button>
+<p id="toantinh"></p>
+<p>Nhập số năm:</p>
+<input id="number6">
+<button onclick="ketqua4()">Xác Nhận:</button>
+<p id="tinhnam"></p>
+<script>
+
+    function ketqua(){
+        let a = +document.getElementById("number").value
+        let b = a *4
+        let c = a**2
+        document.getElementById('tinhtoan').innerHTML='<p>'+"Chu vi là:"+' '+b +'<br>'+"Diện tích là:"+' ' + c
+    }
+    function ketqua2(){
+        let x = +document.getElementById("number2").value
+        let y = +document.getElementById("number3").value
+        let z = x**2
+        let g = x**y
+        document.getElementById("pheptinh").innerHTML='<p>'+"Kết quả là:"+' '+z +' ' +"và"+' '+g
+    }
+    function ketqua3(){
+        let h = +document.getElementById('number4').value
+        let i = +document.getElementById('number5').value
+        let k = (h+i)*(i-h+1)/2
+        document.getElementById('toantinh').innerHTML='<p>'+'Kết quả là:'+ ' '+k
+    }
+    function ketqua4(){
+        let a = +document.getElementById('number6').value
+        let b = ((a-(a%100))/100+1)
+        document.getElementById("tinhnam").innerHTML='<p>'+'Đây là thế kỉ:'+ ' ' +b
+    }
+
+</script>
+</body>
+</html>

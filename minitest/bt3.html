@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3</title>
+</head>
+<body>
+<input id='number1'>
+<input id='number2'>
+<button onclick="tinhtoan()">Kết quả:</button>
+<p id="ketqua"></p>
+<script>
+  function tinhtoan(){
+    let a = +document.getElementById('number1').value
+    let b = +document.getElementById('number2').value
+    document.getElementById("ketqua").innerHTML='<h1>'+'Kết qủa:'+ " " + a*b
+  }
+</script>
+</body>
+</html>
